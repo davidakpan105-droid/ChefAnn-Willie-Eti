@@ -1,1022 +1,847 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chef Ann Willie Eti · Luxury Portfolio</title>
-    <!-- Google Fonts: Playfair Display + Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChefAnn Willie Eti | Executive Chef | Culinary Instructor | Mentor</title>
+  <meta name="description" content="ChefAnn Willie Eti is an Executive Chef, Culinary Instructor, Mentor and Hospitality Professional empowering aspiring chefs and women through culinary education, leadership and professional training.">
+  <meta name="author" content="ChefAnn Willie Eti">
+  <link rel="canonical" href="https://www.chefannwillieeti.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ChefAnn Willie Eti | Executive Chef | Culinary Instructor | Mentor">
+  <meta property="og:description" content="Executive Chef, Culinary Instructor and Mentor empowering aspiring chefs and women through culinary education, leadership and professional training.">
+  <meta property="og:image" content="https://picsum.photos/id/292/1200/630">
+  <meta property="og:url" content="https://www.chefannwillieeti.com/">
+  <meta property="og:site_name" content="ChefAnn Willie Eti">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChefAnn Willie Eti | Executive Chef | Culinary Instructor | Mentor">
+  <meta name="twitter:description" content="Executive Chef, Culinary Instructor and Mentor empowering aspiring chefs and women through culinary education, leadership and professional training.">
+  <meta name="twitter:image" content="https://picsum.photos/id/292/1200/630">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ChefAnn Willie Eti",
+    "jobTitle": "Executive Chef, Culinary Instructor & Mentor",
+    "url": "https://www.chefannwillieeti.com/",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.facebook.com/"
+    ],
+    "description": "Executive Chef, Culinary Instructor, Mentor and Communications Professional dedicated to transforming lives through culinary excellence, leadership and practical education."
+  }
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header class="luxury-header" id="header">
-        <div class="container nav-container">
-            <div class="logo">
-                <span class="gold">Chef</span> Ann <span class="gold">W</span>. Eti
-            </div>
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="#hero" class="active-link">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-mark">ChefAnn Willie Eti</div>
+    <div class="preloader-line"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="brand-mark" href="#home">ChefAnn Willie Eti</a>
+
+        <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="mainNavbar">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item"><a class="nav-link-custom active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#programs">Programs</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#podcast">Podcast</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link-custom" href="#faq">FAQ</a></li>
+            <li class="nav-item ms-lg-3"><a class="nav-cta" href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- ===== HERO SLIDER ===== -->
-    <section class="hero-slider" id="hero">
+  <main>
 
-        <!-- Slide 1 -->
-        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1920&q=80');">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-                <span class="slide-tag gold">Executive Chef</span>
-                <h1 class="slide-title">Crafting Exceptional <br /><span class="gold">Culinary Experiences</span></h1>
-                <p class="slide-text">Executive Chef, Culinary Instructor, and Communications Artist dedicated to transforming ingredients into memorable experiences through creativity, precision, and excellence.</p>
-                <div class="slide-cta">
-                    <a href="#portfolio" class="btn-primary">View Portfolio</a>
-                    <a href="#contact" class="btn-outline">Book a Consultation</a>
-                </div>
-            </div>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-slide active">
+        <div class="hero-slide-bg" style="background-image:url('https://picsum.photos/id/292/1920/1080');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="container-fluid-custom">
+            <p class="hero-eyebrow">Executive Chef &nbsp;·&nbsp; Culinary Instructor &nbsp;·&nbsp; Mentor</p>
+            <h1 class="hero-title">Building Excellence Through Culinary Education</h1>
+            <p class="hero-subtitle">Two decades of professional kitchens, classrooms and communities, shaped into a single standard of craft.</p>
+            <a href="#about" class="btn-luxury btn-luxury-light">Explore My Journey <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
+      </div>
 
-        <!-- Slide 2 -->
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1920&q=80');">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-                <span class="slide-tag gold">Culinary Instructor</span>
-                <h1 class="slide-title">Shaping The Next Generation <br /><span class="gold">Of Culinary Excellence</span></h1>
-                <p class="slide-text">Empowering aspiring chefs and hospitality professionals through practical training, mentorship, and industry-driven culinary education.</p>
-                <div class="slide-cta">
-                    <a href="#services" class="btn-primary">Explore Training Programs</a>
-                    <a href="#contact" class="btn-outline">Contact Me</a>
-                </div>
-            </div>
+      <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('https://picsum.photos/id/163/1920/1080');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="container-fluid-custom">
+            <p class="hero-eyebrow">Empowering Women &nbsp;·&nbsp; Creating Opportunities</p>
+            <h1 class="hero-title">Leadership Through Education</h1>
+            <p class="hero-subtitle">Professional culinary training designed to open doors for women across every stage of their career.</p>
+            <a href="#programs" class="btn-luxury btn-luxury-light">View Programs <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
+      </div>
 
-        <!-- Slide 3 -->
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033?w=1920&q=80');">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-                <span class="slide-tag gold">Event Catering</span>
-                <h1 class="slide-title">Elevating Events <br /><span class="gold">Through Culinary Art</span></h1>
-                <p class="slide-text">From intimate gatherings to corporate events, delivering refined dining experiences that leave lasting impressions.</p>
-                <div class="slide-cta">
-                    <a href="#services" class="btn-primary">View Services</a>
-                    <a href="#contact" class="btn-outline">Schedule A Call</a>
-                </div>
-            </div>
+      <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('https://picsum.photos/id/225/1920/1080');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="container-fluid-custom">
+            <p class="hero-eyebrow">Leadership &nbsp;·&nbsp; Mentorship &nbsp;·&nbsp; Communication</p>
+            <h1 class="hero-title">Building Future Culinary Professionals</h1>
+            <p class="hero-subtitle">Hospitality excellence begins with people. Let's start a conversation about your journey.</p>
+            <a href="#contact" class="btn-luxury btn-luxury-light">Let's Connect <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
+      </div>
 
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-            <button class="slider-btn prev" aria-label="Previous slide">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="slider-dots">
-                <span class="slider-dot active" data-index="0"></span>
-                <span class="slider-dot" data-index="1"></span>
-                <span class="slider-dot" data-index="2"></span>
-            </div>
-            <button class="slider-btn next" aria-label="Next slide">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
+      <div class="hero-particles"></div>
 
+      <div class="hero-dots">
+        <button class="hero-dot active" aria-label="Slide 1"></button>
+        <button class="hero-dot" aria-label="Slide 2"></button>
+        <button class="hero-dot" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-mouse"></div>
+      </div>
     </section>
 
-    <!-- ===== ANIMATED COUNTERS ===== -->
-    <section class="counter-section">
-        <div class="container counter-grid">
-            <div class="counter-item">
-                <span class="counter-number" data-target="15">0</span>
-                <span class="counter-plus">+</span>
-                <p class="counter-label">Years Experience</p>
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <div class="container-fluid-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="about-portrait-wrap" data-aos="fade-right">
+              <div class="about-portrait-frame">
+                <img src="https://picsum.photos/id/64/900/1100" alt="Portrait of ChefAnn Willie Eti, Executive Chef and Culinary Instructor" loading="lazy">
+                <span class="about-portrait-caption">Executive Chef · Instructor · Mentor</span>
+              </div>
             </div>
-            <div class="counter-item">
-                <span class="counter-number" data-target="120">0</span>
-                <span class="counter-plus">+</span>
-                <p class="counter-label">Luxury Events</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-bio" data-aos="fade-left">
+              <span class="eyebrow">About ChefAnn</span>
+              <h2 class="section-heading">A Career Built On Craft, Discipline &amp; Purpose</h2>
+              <p>ChefAnn Willie Eti is an accomplished Executive Chef, Culinary Instructor, Mentor and Communications Professional dedicated to transforming lives through culinary excellence, leadership and practical education.</p>
+              <p>Through years of experience, she has trained aspiring chefs, empowered women through professional culinary programs, mentored hospitality professionals and inspired excellence across communities. Her approach pairs technical precision with genuine care for the people she teaches, treating every kitchen as a classroom and every classroom as the start of a career.</p>
+
+              <div class="row counters-row g-4">
+                <div class="col-6 col-md-4">
+                  <div class="counter-item">
+                    <div class="counter-number" data-count="500"><span class="count-value">0</span>+</div>
+                    <div class="counter-label">Women Trained</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="counter-item">
+                    <div class="counter-number" data-count="40"><span class="count-value">0</span>+</div>
+                    <div class="counter-label">Programs Delivered</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="counter-item">
+                    <div class="counter-number" data-count="15"><span class="count-value">0</span>+</div>
+                    <div class="counter-label">Years of Experience</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="counter-item">
+                    <div class="counter-number" data-count="1200"><span class="count-value">0</span>+</div>
+                    <div class="counter-label">Students Mentored</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="counter-item">
+                    <div class="counter-number" data-count="60"><span class="count-value">0</span>+</div>
+                    <div class="counter-label">Hospitality Projects</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="counter-item">
-                <span class="counter-number" data-target="45">0</span>
-                <span class="counter-plus">+</span>
-                <p class="counter-label">Training Programs</p>
-            </div>
-            <div class="counter-item">
-                <span class="counter-number" data-target="98">0</span>
-                <span class="counter-percent">%</span>
-                <p class="counter-label">Client Satisfaction</p>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-    <!-- ===== ABOUT SECTION ===== -->
-<section class="about-section" id="about">
-    <div class="container about-grid">
-        <div class="about-image-wrapper">
-            <div class="about-image">
-                <img src="https://scontent.fbni1-1.fna.fbcdn.net/v/t39.30808-6/713144820_122162281472813662_4545602065560558780_n.jpg?stp=dst-jpg_tt6&cstp=mx1639x2048&ctp=s1639x2048&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHtPAkiSWY4UPZctmk4wvuezm0P6NnyVVDObQ_o2fJVUMhASh4F99VhvU22s9H-nxb6oiUh4yppUSDw91b5nujj&_nc_ohc=_mVXbxaeiuYQ7kNvwFABcHF&_nc_oc=Adp03XrfP7YRCkOknwaGkA3Zaen0zRdERJASO0QfxAZQKeRbxF6HalnKqw5imvgu42U&_nc_zt=23&_nc_ht=scontent.fbni1-1.fna&_nc_gid=ixv34rCMzDQ6F_tMCT_hiQ&_nc_ss=7c2a8&oh=00_Af-FDDvFkNy8JGMQf7sHjR7ORXIlUO74P2uN2LwDiyFBvw&oe=6A409EA0" alt="Chef Ann Willie Eti" loading="lazy" />
+    <!-- ================= MISSION ================= -->
+    <section class="mission-section" id="mission">
+      <div class="container-fluid-custom">
+        <div class="section-header-row text-center mx-auto" style="max-width:700px;" data-aos="fade-up">
+          <span class="eyebrow mx-auto d-inline-block">Guiding Principles</span>
+          <h2 class="section-heading">Mission, Vision &amp; Core Values</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="glass-card">
+              <div class="glass-card-icon"><i class="bi bi-compass"></i></div>
+              <h3>Mission</h3>
+              <p>To equip aspiring chefs and hospitality professionals, especially women, with the technical skill, confidence and leadership needed to build lasting careers in culinary arts.</p>
             </div>
-            <div class="about-experience-badge">
-                <span>15+ Years</span>
-                <small>of Culinary Excellence</small>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="120">
+            <div class="glass-card">
+              <div class="glass-card-icon"><i class="bi bi-eye"></i></div>
+              <h3>Vision</h3>
+              <p>A hospitality industry where every kitchen reflects excellence, every chef leads with integrity, and opportunity is accessible to anyone willing to learn the craft.</p>
             </div>
-        </div>
-        <div class="about-content">
-            <span class="about-subtitle gold">— About Me</span>
-            <h2 class="section-title">Chef Ann Willie Eti</h2>
-            <div class="about-divider"></div>
-            <p class="about-text lead">Executive Chef · Culinary Instructor · Communications Artist</p>
-            <p class="about-text">Chef Ann Willie Eti is an accomplished Executive Chef, Culinary Instructor, and Communications Artist with a passion for excellence in food, education, and professional storytelling.</p>
-            <p class="about-text">With extensive experience in culinary operations, menu development, kitchen leadership, hospitality training, and communication strategy, she combines technical expertise with creativity to deliver exceptional results.</p>
-            <p class="about-text highlight">Her mission is to inspire, educate, and create unforgettable culinary experiences while mentoring future industry professionals.</p>
-            <div class="about-signature">
-                <span class="signature-line">—</span>
-                <span class="signature-name">Chef Ann W. Eti</span>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="240">
+            <div class="glass-card">
+              <div class="glass-card-icon"><i class="bi bi-gem"></i></div>
+              <h3>Core Values</h3>
+              <p>Excellence, discipline, mentorship and empowerment. Every program is built on practical skill, honest feedback and respect for the people we train.</p>
             </div>
-            <a href="#contact" class="btn-primary">Work With Me</a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- ===== SERVICES SECTION ===== -->
-<section class="services-section" id="services">
-    <div class="container">
-        <!-- Header -->
-        <div class="services-header">
-            <span class="services-subtitle gold">— Curated Offerings</span>
-            <h2 class="section-title">Luxury Culinary <span class="gold">Services</span></h2>
-            <p class="services-intro">Elevate your dining experience with bespoke solutions crafted by Executive Chef Ann Willie Eti.</p>
-            <div class="services-divider"></div>
+    <!-- ================= PROGRAMS ================= -->
+    <section id="programs">
+      <div class="container-fluid-custom">
+        <div class="section-header-row" data-aos="fade-up">
+          <span class="eyebrow">What I Offer</span>
+          <h2 class="section-heading">Programs &amp; Professional Training</h2>
+          <p class="section-intro">Structured, hands-on programs for every stage of a culinary or hospitality career, from first-time learners to established teams.</p>
         </div>
 
-        <!-- Services Grid -->
-        <div class="services-grid" id="servicesGrid">
-
-            <!-- Card 1 – Signature -->
-            <div class="service-card featured" data-tilt>
-                <div class="service-image" style="background-image: url('https://scontent.fbni1-2.fna.fbcdn.net/v/t39.30808-6/712065170_122162318072813662_6045943883273989551_n.jpg?stp=dst-jpg_tt6&cstp=mx960x1280&ctp=s960x1280&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGw8T7XU7Uv91D5qt47eYINzcS9kxYy5tXNxL2TFjLm1XKhhIvcBSvTJWLNghlWrFao88EZ3qQUvcuJpPYuuCWi&_nc_ohc=AmvH4pztFZYQ7kNvwGZuMvR&_nc_oc=AdoS7FVkJoeVq3oJDoZGP7ji6ypiRsrww1j_-I6K_x81VQM7Mks8CkHn3Tg1xYbGzxU&_nc_zt=23&_nc_ht=scontent.fbni1-2.fna&_nc_gid=H2__7ECXV4DzIrEN6Ex7PA&_nc_ss=7c2a8&oh=00_Af98RRyOvCFAifcZ1pIYas0IMxoitV8JM6OG3LCvwSjgDA&oe=6A40BD6C');">
-                    <div class="service-overlay"></div>
-                    <div class="service-badge">Signature</div>
-                    <div class="service-icon"><i class="fas fa-crown"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Luxury Private Dining</h3>
-                    <p>An exclusive, multi‑course gastronomic journey tailored to your palate, served in the intimacy of your chosen setting.</p>
-                </div>
+        <div class="row g-4" id="programs-grid">
+          <!-- Program 1 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/292/800/600" alt="Professional Culinary Training" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">01</span>
+                <h3>Professional Culinary Training</h3>
+                <p>Foundational and advanced technique for aspiring chefs, covering knife skills, method and kitchen discipline.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="service-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://scontent.fbni1-2.fna.fbcdn.net/v/t39.30808-6/705681769_122161681652813662_3379538292762744340_n.jpg?stp=dst-jpg_tt6&cstp=mx933x1231&ctp=s933x1231&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHaZHGq6hhi_BAlsvMobYczw_fS5he3YZrD99LmF7dhmhTonCF6ODEQwZ_b3EcjcVjur6F98AcJkD5xdGQIFR0r&_nc_ohc=AzE1HneykdsQ7kNvwH10gb1&_nc_oc=AdrzQnNjXgwrso37itFrRKmCaxVpTvqH-fMNbaOMIPsa62YHB_YGP7pgFeWaA_iKsyQ&_nc_zt=23&_nc_ht=scontent.fbni1-2.fna&_nc_gid=jpEM8kuZsXyYfhy7HbP-cw&_nc_ss=7c2a8&oh=00_Af99z2jAq23qUeZajxcSByCHFNnmAPSDp6Ju_OKV2go85w&oe=6A408B4A');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-utensil-spoon"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Executive Chef Services</h3>
-                    <p>Full culinary leadership, menu curation, and kitchen management for hotels, resorts, and fine‑dining establishments.</p>
-                </div>
+          </div>
+          <!-- Program 2 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/225/800/600" alt="Women Empowerment Program" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">02</span>
+                <h3>Women Empowerment Program</h3>
+                <p>Culinary skill paired with business fundamentals, built to help women launch and sustain their own ventures.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="service-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1574483624021-26448b4a4ae4?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Culinary Training & Mentorship</h3>
-                    <p>Hands‑on workshops and one‑on‑one coaching for aspiring chefs and hospitality teams seeking mastery.</p>
-                </div>
+          </div>
+          <!-- Program 3 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/163/800/600" alt="Pastry and Baking Masterclass" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">03</span>
+                <h3>Pastry &amp; Baking Masterclass</h3>
+                <p>Precision-focused instruction in pastry, breads and confections, from technique to plated presentation.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 4 -->
-            <div class="service-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1555243896-c709bfa0b9d3?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Restaurant Consulting</h3>
-                    <p>Strategic concept development, operational optimization, and profitability analysis for new or existing venues.</p>
-                </div>
+          </div>
+          <!-- Program 4 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/312/800/600" alt="Kitchen Management" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">04</span>
+                <h3>Kitchen Management</h3>
+                <p>Systems for running an efficient, safe and profitable kitchen, from inventory to staff scheduling.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 5 – hidden -->
-            <div class="service-card hidden-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Menu Engineering</h3>
-                    <p>Design data‑driven menus that balance culinary artistry, cost efficiency, and guest appeal.</p>
-                </div>
+          </div>
+          <!-- Program 5 -->
+          <div class="col-md-6 col-lg-3 card-extra" data-aos="fade-up">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/365/800/600" alt="Restaurant Operations" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">05</span>
+                <h3>Restaurant Operations</h3>
+                <p>End-to-end guidance on running a restaurant, from front-of-house standards to back-of-house workflow.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 6 – hidden -->
-            <div class="service-card hidden-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Event Catering Solutions</h3>
-                    <p>Full‑scale catering for weddings, corporate galas, and private celebrations with a focus on elegance and flavor.</p>
-                </div>
+          </div>
+          <!-- Program 6 -->
+          <div class="col-md-6 col-lg-3 card-extra" data-aos="fade-up" data-aos-delay="80">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/431/800/600" alt="Food Business Coaching" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">06</span>
+                <h3>Food Business Coaching</h3>
+                <p>One-on-one coaching for chefs and entrepreneurs building a food brand, menu or catering operation.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 7 – hidden -->
-            <div class="service-card hidden-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-users"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Hospitality Staff Training</h3>
-                    <p>Comprehensive training programs to elevate service standards and team performance.</p>
-                </div>
+          </div>
+          <!-- Program 7 -->
+          <div class="col-md-6 col-lg-3 card-extra" data-aos="fade-up" data-aos-delay="160">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/1040/800/600" alt="Hospitality Leadership" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">07</span>
+                <h3>Hospitality Leadership</h3>
+                <p>Leadership development for supervisors and managers responsible for teams in fast-paced hospitality settings.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 8 – hidden -->
-            <div class="service-card hidden-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Culinary Brand Communication</h3>
-                    <p>Storytelling, content creation, and media strategy to build a compelling culinary brand identity.</p>
-                </div>
+          </div>
+          <!-- Program 8 -->
+          <div class="col-md-6 col-lg-3 card-extra" data-aos="fade-up" data-aos-delay="240">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/1074/800/600" alt="Youth Culinary Development" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">08</span>
+                <h3>Youth Culinary Development</h3>
+                <p>Early-stage training that introduces young people to the discipline, safety and craft of professional cooking.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
-            <!-- Card 9 – hidden -->
-            <div class="service-card hidden-card" data-tilt>
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1556910096-6f3d7c1d0a3e?w=800&q=80');">
-                    <div class="service-overlay"></div>
-                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Partnership & Collaboration</h3>
-                    <p>Strategic alliances with food brands, tourism boards, and culinary institutions for mutual growth.</p>
-                </div>
+          </div>
+          <!-- Program 9 -->
+          <div class="col-md-6 col-lg-3 card-extra" data-aos="fade-up">
+            <div class="program-card">
+              <div class="program-image"><img src="https://picsum.photos/id/1080/800/600" alt="Corporate Culinary Workshops" loading="lazy"></div>
+              <div class="program-body">
+                <span class="program-number">09</span>
+                <h3>Corporate Culinary Workshops</h3>
+                <p>Custom workshops for organizations, teams and events, blending hands-on cooking with guided team building.</p>
+                <a href="#contact" class="program-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-
+          </div>
         </div>
 
-        <!-- Toggle Button -->
-        <div class="services-toggle">
-            <button class="btn-outline" id="servicesToggle">
-                <span class="toggle-text">Show More Services</span>
-                <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
-            </button>
+        <div class="show-more-wrap">
+          <button class="btn-luxury show-more-btn" data-target="programs-grid" data-label-more="Show More Programs" data-label-less="Show Fewer Programs">
+            <span>Show More Programs</span> <i class="bi bi-plus"></i>
+          </button>
         </div>
+      </div>
+    </section>
 
-        <!-- Call to Action -->
-        <div class="section-cta">
-            <a href="#contact" class="btn-primary">Request a Service</a>
+    <!-- ================= WHY CHOOSE ================= -->
+    <section class="why-section" id="why">
+      <div class="container-fluid-custom">
+        <div class="section-header-row" data-aos="fade-up">
+          <span class="eyebrow">Why Train With ChefAnn</span>
+          <h2 class="section-heading">A Standard Built On Experience</h2>
         </div>
-    </div>
-</section>
-
-
-<!-- ===== PODCAST SECTION ===== -->
-<section class="podcast-section" id="podcast">
-    <div class="container">
-        <!-- Header -->
-        <div class="podcast-header">
-            <span class="podcast-subtitle gold">— Audio Stories</span>
-            <h2 class="section-title">The <span class="gold">Culinary Voice</span></h2>
-            <p class="podcast-intro">Join Chef Ann Willie Eti as she interviews industry leaders and explores the art of fine dining.</p>
-            <div class="podcast-divider"></div>
-        </div>
-
-        <!-- Single Episode Hero -->
-        <div class="podcast-hero">
-            <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=1600&q=80" alt="The Culinary Voice Podcast" loading="lazy" />
-            <div class="podcast-hero-overlay">
-                <div class="podcast-hero-content">
-                    <span class="hero-badge gold">🎙️ Latest Episode</span>
-                    <h3>Episode 12: The Art of Plating</h3>
-                    <p class="hero-guest">with Chef Marco Bellini · 3-Michelin Star Chef</p>
-                    <p class="hero-description">In this exclusive episode, Chef Ann sits down with renowned 3-Michelin star Chef Marco Bellini to discuss the philosophy behind his iconic plating techniques, the evolution of modern gastronomy, and the discipline required to maintain culinary excellence at the highest level.</p>
-                    <div class="hero-meta">
-                        <span><i class="far fa-clock"></i> 48 min</span>
-                        <span><i class="far fa-calendar"></i> June 15, 2026</span>
-                    </div>
-                    <div class="hero-actions">
-                        <a href="#" class="btn-primary cta-trigger">▶ Listen Now</a>
-                        <a href="#" class="btn-outline cta-trigger"><i class="fab fa-apple"></i> Apple</a>
-                        <a href="#" class="btn-outline cta-trigger"><i class="fab fa-spotify"></i> Spotify</a>
-                    </div>
-                </div>
+        <div class="row g-3" id="why-grid">
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-award"></i></div>
+              <h3>Professional Experience</h3>
             </div>
-        </div>
-
-        <!-- Subscribe -->
-        <div class="podcast-subscribe">
-            <p>Subscribe wherever you listen to podcasts</p>
-            <div class="subscribe-platforms">
-                <a href="#" class="platform-btn cta-trigger"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                <a href="#" class="platform-btn cta-trigger"><i class="fab fa-spotify"></i> Spotify</a>
-                <a href="#" class="platform-btn cta-trigger"><i class="fab fa-google"></i> Google Podcasts</a>
-                <a href="#" class="platform-btn cta-trigger"><i class="fab fa-amazon"></i> Amazon Music</a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="60">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Leadership</h3>
             </div>
-        </div>
-    </div>
-
-    <!-- Coming Soon Modal -->
-    <div class="modal" id="comingSoonModal">
-        <div class="modal-content glass">
-            <span class="modal-close" id="modalClose">&times;</span>
-            <div class="modal-icon">🎙️</div>
-            <h3>Coming Soon</h3>
-            <p>This episode is currently in production. Stay tuned for the release date!</p>
-            <button class="btn-primary" id="modalGotIt">Got it</button>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- ===== GALLERY SECTION – FULL WIDTH ===== -->
-<section class="gallery-section" id="gallery">
-    <div class="container">
-        <!-- Header -->
-        <div class="gallery-header">
-            <span class="gallery-subtitle gold">— Visual Stories</span>
-            <h2 class="section-title">Culinary <span class="gold">Gallery</span></h2>
-            <p class="gallery-intro">A curated collection of exquisite dishes, culinary artistry, and unforgettable dining experiences.</p>
-            <div class="gallery-divider"></div>
-        </div>
-    </div>
-
-    <!-- Full Width Grid -->
-    <div class="gallery-grid" id="galleryGrid">
-        <!-- Image 1 – Visible -->
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-
-        <!-- Image 2 – Visible -->
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-
-        <!-- Image 3 – Visible -->
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-
-        <!-- Image 4 – Hidden -->
-        <div class="gallery-item hidden-image">
-            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-
-        <!-- Image 5 – Hidden -->
-        <div class="gallery-item hidden-image">
-            <img src="https://images.unsplash.com/photo-1574483624021-26448b4a4ae4?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-
-        <!-- Image 6 – Hidden -->
-        <div class="gallery-item hidden-image">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80" alt="Gallery" loading="lazy" />
-            <div class="gallery-item-inner"></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- Show More / Show Less Button -->
-        <div class="gallery-toggle">
-            <button class="btn-outline" id="galleryToggle">
-                <span class="toggle-text">Show More Images</span>
-                <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CONSULTATION SECTION ===== -->
-<section class="consultation-section" id="consultation">
-    <div class="consultation-wrapper">
-        <!-- Left Side – Image & Branding -->
-        <div class="consultation-image">
-            <div class="consultation-image-overlay">
-                <div class="consultation-brand">
-                    <span class="consultation-tag gold">— Book a Consultation</span>
-                    <h2>Let's Create <br /><span class="gold">Something Remarkable</span></h2>
-                    <p>Whether you require executive culinary leadership, training solutions, event catering expertise, or strategic consultation, I would be delighted to discuss how we can work together.</p>
-                    <div class="consultation-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">120+</span>
-                            <span class="stat-label">Projects Delivered</span>
-                        </div>
-                    </div>
-                    <div class="consultation-contact">
-                        <p><i class="fas fa-phone gold"></i> 09010211707</p>
-                        <p><i class="fas fa-envelope gold"></i> chef.ann@culinaryart.com</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="120">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-people"></i></div>
+              <h3>Mentorship</h3>
             </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-journal-bookmark"></i></div>
+              <h3>Industry Knowledge</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 card-extra" data-aos="fade-up">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-gender-female"></i></div>
+              <h3>Women Empowerment</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 card-extra" data-aos="fade-up" data-aos-delay="60">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-hand-index-thumb"></i></div>
+              <h3>Hands-On Learning</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 card-extra" data-aos="fade-up" data-aos-delay="120">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-stars"></i></div>
+              <h3>Creative Excellence</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 card-extra" data-aos="fade-up" data-aos-delay="180">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-briefcase"></i></div>
+              <h3>Hospitality Consulting</h3>
+            </div>
+          </div>
         </div>
 
-        <!-- Right Side – Consultation Form -->
-        <div class="consultation-form-wrapper">
-            <div class="consultation-form-container glass">
-                <div class="form-header">
-                    <span class="form-subtitle gold">— Schedule Your Session</span>
-                    <h3>Request a <span class="gold">Consultation</span></h3>
-                    <p>Fill in the details below and I'll get back to you within 24 hours.</p>
-                </div>
-
-                <form class="consultation-form" id="consultationForm">
-                    <!-- Step 1: Personal Details -->
-                    <div class="form-step active" data-step="1">
-                        <div class="form-group">
-                            <label for="fullName">Full Name <span class="required">*</span></label>
-                            <input type="text" id="fullName" placeholder="Your full name" required />
-                            <span class="input-icon"><i class="fas fa-user"></i></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
-                            <input type="email" id="email" placeholder="you@example.com" required />
-                            <span class="input-icon"><i class="fas fa-envelope"></i></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="phone" placeholder="+234 901 021 1707" required />
-                            <span class="input-icon"><i class="fas fa-phone"></i></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="preferredDate">Preferred Date</label>
-                            <input type="date" id="preferredDate" />
-                            <span class="input-icon"><i class="fas fa-calendar-alt"></i></span>
-                        </div>
-                    </div>
-
-                    <!-- Step 2: Service Selection -->
-                    <div class="form-step" data-step="2">
-                        <div class="form-group">
-                            <label>Service Category <span class="required">*</span></label>
-                            <div class="service-options" id="serviceOptions">
-                                <div class="service-option" data-service="Executive Chef Services">
-                                    <i class="fas fa-utensil-spoon"></i>
-                                    <span>Executive Chef</span>
-                                </div>
-                                <div class="service-option" data-service="Culinary Training Programs">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                    <span>Training</span>
-                                </div>
-                                <div class="service-option" data-service="Restaurant Consulting">
-                                    <i class="fas fa-chart-line"></i>
-                                    <span>Consulting</span>
-                                </div>
-                                <div class="service-option" data-service="Event Catering Solutions">
-                                    <i class="fas fa-glass-cheers"></i>
-                                    <span>Catering</span>
-                                </div>
-                                <div class="service-option" data-service="Private Dining Experiences">
-                                    <i class="fas fa-crown"></i>
-                                    <span>Private Dining</span>
-                                </div>
-                                <div class="service-option" data-service="Other Services">
-                                    <i class="fas fa-handshake"></i>
-                                    <span>Other</span>
-                                </div>
-                            </div>
-                            <input type="hidden" id="selectedService" value="" />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tell me about your project <span class="required">*</span></label>
-                            <textarea id="message" rows="4" placeholder="Describe your culinary needs, event details, or training requirements..." required></textarea>
-                            <span class="input-icon textarea-icon"><i class="fas fa-pencil-alt"></i></span>
-                        </div>
-                    </div>
-
-                    <!-- Step 3: Confirmation -->
-                    <div class="form-step" data-step="3">
-                        <div class="confirmation-content">
-                            <div class="confirmation-icon">✓</div>
-                            <h3>Almost There!</h3>
-                            <p>Please review your details before submitting.</p>
-                            <div class="confirmation-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Name</span>
-                                    <span class="detail-value" id="confirmName">—</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Email</span>
-                                    <span class="detail-value" id="confirmEmail">—</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Phone</span>
-                                    <span class="detail-value" id="confirmPhone">—</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Service</span>
-                                    <span class="detail-value" id="confirmService">—</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Date</span>
-                                    <span class="detail-value" id="confirmDate">—</span>
-                                </div>
-                            </div>
-                            <div class="consultation-note">
-                                <i class="fas fa-shield-alt gold"></i>
-                                <span>Your information is secure.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Form Navigation -->
-                    <div class="form-navigation">
-                        <div class="form-progress">
-                            <span class="progress-step active" data-step="1">1</span>
-                            <span class="progress-line"></span>
-                            <span class="progress-step" data-step="2">2</span>
-                            <span class="progress-line"></span>
-                            <span class="progress-step" data-step="3">3</span>
-                        </div>
-                        <div class="form-buttons">
-                            <button type="button" class="btn-outline small" id="prevStep" style="display:none;">
-                                <i class="fas fa-chevron-left"></i> Back
-                            </button>
-                            <button type="button" class="btn-primary" id="nextStep">
-                                Next <i class="fas fa-chevron-right"></i>
-                            </button>
-                            <button type="submit" class="btn-primary" id="submitBtn" style="display:none;">
-                                <i class="fas fa-paper-plane"></i> Send Request
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
-                <!-- Success Message -->
-                <div class="form-success" id="formSuccess" style="display:none;">
-                    <div class="success-icon">🎉</div>
-                    <h3>Request Sent!</h3>
-                    <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-                    <button class="btn-primary" onclick="location.reload()">Send Another</button>
-                </div>
-            </div>
+        <div class="show-more-wrap">
+          <button class="btn-luxury show-more-btn" data-target="why-grid" data-label-more="Show More" data-label-less="Show Less">
+            <span>Show More</span> <i class="bi bi-plus"></i>
+          </button>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-<!-- ===== TESTIMONIALS SECTION ===== -->
-<section class="testimonials-section" id="testimonials">
-    <div class="container">
-        <!-- Header -->
-        <div class="testimonials-header">
-            <span class="testimonials-subtitle gold">— Client Stories</span>
-            <h2 class="section-title">What <span class="gold">Clients Say</span></h2>
-            <p class="testimonials-intro">Real feedback from industry leaders, hospitality professionals, and culinary partners.</p>
-            <div class="testimonials-divider"></div>
+    <!-- ================= TIMELINE ================= -->
+    <section id="journey">
+      <div class="container-fluid-custom">
+        <div class="section-header-row text-center mx-auto" style="max-width:700px;" data-aos="fade-up">
+          <span class="eyebrow mx-auto d-inline-block">Career Journey</span>
+          <h2 class="section-heading">Professional Milestones</h2>
         </div>
 
-        <!-- Slider Container -->
-        <div class="testimonials-slider-wrapper">
-            <div class="testimonials-slider" id="testimonialSlider">
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Early Career</span>
+            <h3>Foundations in Professional Kitchens</h3>
+            <p>Trained under experienced chefs across professional kitchens, building the technical foundation that would define her approach to teaching.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Certification</span>
+            <h3>Culinary Arts Certification &amp; Advanced Training</h3>
+            <p>Completed advanced culinary certifications, sharpening technique in classical method, pastry and modern kitchen management.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Leadership</span>
+            <h3>First Executive Chef Role</h3>
+            <p>Stepped into a leadership position overseeing kitchen operations, staff training and menu development for a growing hospitality brand.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Training Programs</span>
+            <h3>Launch of Culinary Training Initiatives</h3>
+            <p>Began developing structured training programs for aspiring chefs, formalizing the curriculum still used across her programs today.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Speaking Engagements</span>
+            <h3>Industry Panels &amp; Speaking Engagements</h3>
+            <p>Invited to speak at hospitality and culinary events, sharing insights on kitchen leadership and career development.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Women Empowerment</span>
+            <h3>Women Empowerment Program Established</h3>
+            <p>Founded a dedicated program pairing culinary training with business coaching, built specifically for women entering the industry.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Awards</span>
+            <h3>Recognition for Culinary Excellence</h3>
+            <p>Received industry recognition for contributions to culinary education and mentorship within the hospitality community.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <span class="timeline-year">Today</span>
+            <h3>Mentorship, Media &amp; Continued Growth</h3>
+            <p>Continues to train, mentor and speak, extending her reach through podcast conversations, workshops and consulting engagements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <!-- Slide 1 -->
-                <div class="testimonial-slide active">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"Chef Ann's leadership transformed our kitchen operations. Her attention to detail and culinary expertise are unparalleled. She elevated our menu to Michelin-star quality and trained our team with patience and precision."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>MR</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>Marco Rodriguez</h4>
-                                <span>Hotel Director, The Ritz-Carlton</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"The training program Chef Ann designed for our team was exceptional. She combined technical skills with creative inspiration, leaving our staff motivated and confident. Her mentorship has been invaluable to our growth."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>SL</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sophia Laurent</h4>
-                                <span>Executive Pastry Chef, Le Cordon Bleu</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"She curated a bespoke menu for our board retreat that wowed every guest. Chef Ann's ability to balance creativity with flawless execution is rare. She made our corporate event truly unforgettable."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>DK</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>David Kensington</h4>
-                                <span>CEO, Kensington Hospitality Group</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"Working with Chef Ann was a game-changer for our restaurant launch. Her consulting expertise covered everything from menu development to kitchen flow. We couldn't have asked for a better partner."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>JT</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>James Thornton</h4>
-                                <span>Restaurateur, The Oak Room</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"Chef Ann's communication strategy elevated our culinary brand. She helped us tell our story in a way that resonated with our audience. Her creative vision and strategic thinking are exceptional."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>AS</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>Amara Singh</h4>
-                                <span>Brand Director, Artisan Foods</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 6 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-card glass">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"From intimate dinners to large galas, Chef Ann delivers perfection every time. Her attention to guest experience is extraordinary. She's the go-to chef for anyone who values excellence."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <span>EM</span>
-                            </div>
-                            <div class="author-info">
-                                <h4>Elena Martinez</h4>
-                                <span>Event Planner, Elite Events Co.</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                            <i class="fas fa-star gold"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Navigation Controls -->
-            <div class="testimonials-controls">
-                <button class="slider-btn testimonial-prev" id="testimonialPrev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="slider-dots" id="testimonialDots">
-                    <span class="slider-dot active" data-index="0"></span>
-                    <span class="slider-dot" data-index="1"></span>
-                    <span class="slider-dot" data-index="2"></span>
-                    <span class="slider-dot" data-index="3"></span>
-                    <span class="slider-dot" data-index="4"></span>
-                    <span class="slider-dot" data-index="5"></span>
-                </div>
-                <button class="slider-btn testimonial-next" id="testimonialNext">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery-section" id="gallery">
+      <div class="container-fluid-custom">
+        <div class="section-header-row" data-aos="fade-up">
+          <span class="eyebrow">Moments &amp; Milestones</span>
+          <h2 class="section-heading">Gallery</h2>
+          <p class="section-intro">A visual record of training sessions, graduations, workshops and moments from the journey so far.</p>
         </div>
 
-        <!-- CTA -->
-        <div class="testimonials-cta">
-            <a href="#consultation" class="btn-primary">Become My Next Success Story</a>
+        <div class="gallery-grid" data-aos="fade-up">
+          <div class="gallery-item"><img src="https://picsum.photos/id/1/800/1000" alt="Gallery image 1" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/20/800/800" alt="Gallery image 2" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/30/800/1100" alt="Gallery image 3" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/48/800/900" alt="Gallery image 4" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/60/800/1000" alt="Gallery image 5" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/65/800/800" alt="Gallery image 6" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/103/800/1100" alt="Gallery image 7" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/119/800/900" alt="Gallery image 8" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/128/800/1000" alt="Gallery image 9" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/142/800/800" alt="Gallery image 10" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/160/800/1100" alt="Gallery image 11" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
+          <div class="gallery-item"><img src="https://picsum.photos/id/177/800/900" alt="Gallery image 12" loading="lazy"><div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div></div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-
-<!-- ===== CONTACT SECTION ===== -->
-<section class="contact-section" id="contact">
-    <div class="contact-wrapper">
-        <!-- Left Side – Image & Branding -->
-        <div class="contact-image">
-            <div class="contact-image-overlay">
-                <div class="contact-brand">
-                    <span class="contact-tag gold">— Get In Touch</span>
-                    <h2>Let's <span class="gold">Connect</span></h2>
-                    <p>Whether you require executive culinary leadership, training solutions, event catering expertise, or strategic consultation, I would be delighted to discuss how we can work together.</p>
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Phone</span>
-                                <span class="contact-value">09010211707</span>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Email</span>
-                                <span class="contact-value">chef.ann@culinaryart.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Lagos, Nigeria</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Side – Contact Form -->
-        <div class="contact-form-wrapper">
-            <div class="contact-form-container glass">
-                <div class="form-header">
-                    <span class="form-subtitle gold">— Send a Message</span>
-                    <h3>Let's Start a <span class="gold">Conversation</span></h3>
-                    <p>Fill in the details below and I'll get back to you within 24 hours.</p>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <!-- Name -->
-                    <div class="form-group animated-group">
-                        <label for="contactName">Full Name</label>
-                        <input type="text" id="contactName" placeholder="Your full name" required />
-                        <span class="input-icon"><i class="fas fa-user"></i></span>
-                        <span class="input-line"></span>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group animated-group">
-                        <label for="contactEmail">Email Address</label>
-                        <input type="email" id="contactEmail" placeholder="you@example.com" required />
-                        <span class="input-icon"><i class="fas fa-envelope"></i></span>
-                        <span class="input-line"></span>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="form-group animated-group">
-                        <label for="contactPhone">Phone Number</label>
-                        <input type="tel" id="contactPhone" placeholder="+234 901 021 1707" />
-                        <span class="input-icon"><i class="fas fa-phone"></i></span>
-                        <span class="input-line"></span>
-                    </div>
-
-                    <!-- Subject -->
-                    <div class="form-group animated-group">
-                        <label for="contactSubject">Subject</label>
-                        <input type="text" id="contactSubject" placeholder="How can I help you?" />
-                        <span class="input-icon"><i class="fas fa-tag"></i></span>
-                        <span class="input-line"></span>
-                    </div>
-
-                    <!-- Message -->
-                    <div class="form-group animated-group">
-                        <label for="contactMessage">Message</label>
-                        <textarea id="contactMessage" rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
-                        <span class="input-icon textarea-icon"><i class="fas fa-pencil-alt"></i></span>
-                        <span class="input-line"></span>
-                    </div>
-
-                    <!-- Submit -->
-                    <button type="submit" class="btn-primary submit-btn">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                        <span class="btn-loader"><i class="fas fa-spinner fa-spin"></i></span>
-                    </button>
-
-                    <div class="form-note">
-                        <i class="fas fa-shield-alt gold"></i>
-                        <span>Your information is secure and will only be used for this inquiry.</span>
-                    </div>
-                </form>
-
-                <!-- Success Message -->
-                <div class="form-success" id="contactSuccess" style="display:none;">
-                    <div class="success-icon">✓</div>
-                    <h3>Message Sent!</h3>
-                    <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-                    <button class="btn-primary" onclick="location.reload()">Send Another</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- ===== FOOTER ===== -->
-<footer class="luxury-footer" id="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <!-- Brand Column -->
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="gold">Chef</span> Ann <span class="gold">W</span>. Eti
-                </div>
-                <p class="footer-tagline">Executive Chef · Culinary Instructor · Communications Artist</p>
-                <p class="footer-description">Transforming ingredients into memorable experiences through creativity, precision, and excellence.</p>
-                <div class="footer-social">
-                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <!-- Quick Links Column -->
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#podcast">Podcast</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Services Column -->
-            <div class="footer-services">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#services">Executive Chef</a></li>
-                    <li><a href="#services">Culinary Training</a></li>
-                    <li><a href="#services">Restaurant Consulting</a></li>
-                    <li><a href="#services">Event Catering</a></li>
-                    <li><a href="#services">Private Dining</a></li>
-                    <li><a href="#services">Brand Communication</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Column -->
-            <div class="footer-contact">
-                <h4>Get in Touch</h4>
-                <div class="footer-contact-item">
-                    <i class="fas fa-phone gold"></i>
-                    <a href="tel:09010211707">09010211707</a>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-envelope gold"></i>
-                    <a href="mailto:chef.ann@culinaryart.com">chef.ann@culinaryart.com</a>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-map-marker-alt gold"></i>
-                    <span>Lagos, Nigeria</span>
-                </div>
-                <div class="footer-cta">
-                    <a href="#consultation" class="btn-primary small">Book a Consultation</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="footer-copyright">
-                    &copy; 2026 <span class="gold">Chef Ann Willie Eti</span>. All Rights Reserved.
-                </p>
-                <p class="footer-credits">
-                    Crafted with <i class="fas fa-heart gold"></i> by <span class="gold">Chef Ann</span>
-                </p>
-            </div>
-        </div>
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <button class="lightbox-close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-prev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+      <img id="lightbox-img" src="" alt="Enlarged gallery image">
+      <button class="lightbox-next" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
     </div>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-</footer>
+    <!-- ================= PODCAST ================= -->
+    <section class="podcast-section" id="podcast">
+      <div class="container-fluid-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="podcast-cover-wrap">
+              <div class="podcast-cover-frame">
+                <img src="https://picsum.photos/id/1060/900/900" alt="ChefAnn Willie Eti podcast cover" loading="lazy">
+                <div class="podcast-play-btn"><i class="bi bi-play-fill"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="podcast-copy">
+              <span class="eyebrow">On Air</span>
+              <h2 class="section-heading">Podcast &amp; Conversations</h2>
+              <p class="section-intro">Sharing knowledge, inspiring professionals and empowering women through meaningful conversations, leadership and culinary excellence.</p>
+              <a href="#" class="btn-luxury btn-luxury-fill">Watch Episodes <i class="bi bi-play-circle"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- ===== EXTERNAL JS ===== -->
-    <script src="script.js"></script>
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container-fluid-custom">
+        <div class="section-header-row text-center mx-auto" style="max-width:700px;" data-aos="fade-up">
+          <span class="eyebrow mx-auto d-inline-block">Testimonials</span>
+          <h2 class="section-heading">Words From Those She Has Trained</h2>
+        </div>
 
+        <div class="testimonial-track" data-aos="fade-up">
+          <div class="testimonial-card active">
+            <p class="testimonial-quote">ChefAnn's training program gave me the confidence and technical skill to open my own catering business within a year of graduating.</p>
+            <p class="testimonial-name">Blessing Udoh</p>
+            <p class="testimonial-role">Culinary Training Graduate</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">The Women Empowerment Program changed the direction of my career. ChefAnn teaches with patience and holds every student to a real standard.</p>
+            <p class="testimonial-name">Grace Effiong</p>
+            <p class="testimonial-role">Women Empowerment Program Alumna</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">Bringing ChefAnn in for a corporate workshop was one of the best decisions our team made. Practical, engaging and genuinely useful.</p>
+            <p class="testimonial-name">Emmanuel Nkanta</p>
+            <p class="testimonial-role">Operations Manager, Corporate Client</p>
+          </div>
+        </div>
+
+        <div class="testimonial-dots">
+          <button class="testimonial-dot active" aria-label="Testimonial 1"></button>
+          <button class="testimonial-dot" aria-label="Testimonial 2"></button>
+          <button class="testimonial-dot" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-banner" data-aos="fade-up">
+      <h2>Ready To Learn From ChefAnn Willie Eti?</h2>
+      <p>Join one of our professional culinary programs and begin your journey toward excellence.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-luxury btn-luxury-light">Book Training</a>
+        <a href="#contact" class="btn-luxury btn-luxury-fill">Contact Now</a>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq-section" id="faq">
+      <div class="container-fluid-custom">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <span class="eyebrow">Questions</span>
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <p class="section-intro">Answers to what prospective students and partners ask most often. For anything else, reach out directly.</p>
+          </div>
+          <div class="col-lg-8" data-aos="fade-left">
+            <div class="accordion accordion-custom" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Who can join your programs?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Programs are open to anyone with an interest in culinary arts or hospitality, from complete beginners to working professionals looking to sharpen their skills.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Do you train beginners?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes. Several programs are structured specifically for beginners, starting with fundamentals before progressing to more advanced technique.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Do you organize women empowerment programs?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes. The Women Empowerment Program is one of the core offerings, combining culinary skill with practical business coaching for women entering the industry.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    Can organizations invite you?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Absolutely. Corporate culinary workshops and speaking engagements are available for organizations and events of any size.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                    Do you offer mentorship?
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, one-on-one and small group mentorship is available for students and professionals looking for ongoing guidance beyond a single program.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                    Can I book private classes?
+                  </button>
+                </h3>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Private and small-group classes can be arranged around specific goals, schedules and skill levels. Reach out through the contact form to discuss details.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                    Do you offer hospitality consulting?
+                  </button>
+                </h3>
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes. Consulting services cover kitchen management, restaurant operations and staff training for hospitality businesses.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                    How can I contact you?
+                  </button>
+                </h3>
+                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Use the contact form below, or reach out directly by phone, email or WhatsApp. Contact details are listed in the Contact section.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section" id="contact">
+      <div class="container-fluid-custom">
+        <div class="section-header-row" data-aos="fade-up">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-heading">Start The Conversation</h2>
+          <p class="section-intro">For training enquiries, speaking engagements or consulting projects, reach out using any of the details below.</p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">+234 800 000 0000</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">hello@chefannwillieeti.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">Uyo, Akwa Ibom State, Nigeria</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <div class="contact-info-label">WhatsApp</div>
+                <div class="contact-info-value">+234 800 000 0000</div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="#" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <form id="contact-form" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="name">Name</label>
+                  <input type="text" class="form-control form-control-custom" id="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="email">Email</label>
+                  <input type="email" class="form-control form-control-custom" id="email" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="phone">Phone</label>
+                  <input type="tel" class="form-control form-control-custom" id="phone">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="subject">Subject</label>
+                  <input type="text" class="form-control form-control-custom" id="subject">
+                </div>
+                <div class="col-12">
+                  <label class="form-label-custom" for="message">Message</label>
+                  <textarea class="form-control form-control-custom" id="message" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-luxury btn-luxury-fill">Send Message <i class="bi bi-send"></i></button>
+                </div>
+              </div>
+            </form>
+
+            <div class="map-placeholder">
+              <i class="bi bi-map"></i>
+              <span>Map Location — Uyo, Akwa Ibom State</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-fluid-custom">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">ChefAnn Willie Eti</div>
+          <p class="footer-tagline">Executive Chef · Culinary Instructor · Mentor</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="footer-heading">More</div>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#podcast">Podcast</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-heading">Newsletter</div>
+          <p class="footer-tagline">Occasional notes on new programs, workshops and openings.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> ChefAnn Willie Eti. All Rights Reserved.</span>
+        <span>Designed with precision and care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
